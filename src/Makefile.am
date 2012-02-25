@@ -5,7 +5,7 @@ BUILT_SOURCES = possum_info.h
 
 bindir = ${prefix}/bin
 
-bin_PROGRAMS = possum@PROGRAMLABEL@ \
+bin_PROGRAMS = possum@PROGRAMLABEL@
 
 noinst_HEADERS = \
 	character.hpp \
