@@ -1,0 +1,40 @@
+POSSUM is a C++ program for calculating some common population genetic summary statistics.
+
+It can calculate these statistics for a single population, in which case it reports:
+
+    - pi (the nucleotide diversity, Hamming distance, or uncorrected p-distance)
+    - number of segregating sites
+    - number of mutations
+    - Watterson's estimate of theta
+    - Tajima's D
+
+With multiple populations, it is expected that the input files lists the
+sequences group by deme or population, and the '-N' flag is then used to
+inform POSSUM about the population membership, by providing a comma-separated
+list of the numbers of samples from each populatiin. For example, if the data
+has been sampled from three populations, with 10 sequences from the first
+population, 15 from the second, and 8 from the third, then the following is
+the basic POSSUM invocation for this data to be treated correctly:
+
+    possum -N 10,15,8 data.nex
+
+In this case, in addition to the global statistics reported for a single
+population as described above, POSSUM will also report:
+
+    - fst (the fixation index)
+    - pi.within (the average of nucleotide diversity *within* each population)
+    - pi.between (the average of nucleotide diversity *between* each
+      population)
+    - pi.total (the average of nucleotide diversity of all populations
+      considered together)
+    - pi.net (the difference between pi.within and pi.between)
+
+Any data format supported by NCL can be read, including NEXUS, FASTA, PHYLIP,
+etc.
+By default, output is the form of tab-delimited set of columns, which allows
+for easy generation of a flatfile database or table when analyzing multiple
+files.
+Extra columns can be added to this for identification of sources in
+post-processing.
+If the table-based output is not desirable (it can, for example, be difficult
+to read at a glance), an option allows for output in an extended list.
