@@ -1,0 +1,11 @@
+1. The Nexus Class Library (NCL) must be installed. This library is available from here:
+
+    http://sourceforge.net/projects/ncl/
+
+2. After installing NCL, in the POSSUM directory, run:
+
+    ./bootstrap.sh
+    ./configure --with-ncl=/path/to/ncl/installation/dir
+    make
+    make install
+
