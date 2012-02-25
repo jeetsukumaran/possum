@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// MOPOGEN Population Genetic Summary Statistic(s) Calculator.
+// POSSUM Population Genetic Summary Statistic(s) Calculator.
 //
 // Copyright 2010 Jeet Sukumaran.
 //
@@ -24,8 +24,8 @@
 #include <vector>
 #include <algorithm>
 
-#if !defined(MOPOGEN_TEXTUTILS_H)
-#define MOPOGEN_TEXTUTILS_H
+#if !defined(POSSUM_TEXTUTILS_H)
+#define POSSUM_TEXTUTILS_H
 
 namespace possum {
 namespace textutil {

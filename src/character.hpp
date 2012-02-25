@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// MOPOGEN Population Genetic Summary Statistic(s) Calculator.
+// POSSUM Population Genetic Summary Statistic(s) Calculator.
 //
 // Copyright 2010 Jeet Sukumaran.
 //
@@ -19,8 +19,8 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-#ifndef MOPOGEN_CHARACTER_H
-#define MOPOGEN_CHARACTER_H
+#ifndef POSSUM_CHARACTER_H
+#define POSSUM_CHARACTER_H
 
 #include <vector>
 #include <string>
